@@ -10,6 +10,7 @@ public class Palindrome {
     	System.out.print("Enter String: ");
     	Scanner scan = new Scanner(System.in);
     	String str = scan.nextLine();
+    	str = str.toLowerCase();
     	
     	int count = str.length();
     	char[] ch = str.toCharArray();
@@ -28,6 +29,5 @@ public class Palindrome {
 			System.out.println("The word " + str + " is not Palindrome");
 			System.out.println("Count: " + count + " characters");
 		}
-  }
+    }
 }
-
